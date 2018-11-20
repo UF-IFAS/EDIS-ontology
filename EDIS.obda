@@ -1,0 +1,30 @@
+[PrefixDeclaration]
+:		http://purl.obolibrary.org/obo/EDIS/
+dc:		http://purl.org/dc/elements/1.1/
+foo:		http://geneontology.org/foo/
+obo:		http://purl.obolibrary.org/obo/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+doap:		http://usefulinc.com/ns/doap#
+envo:		http://purl.obolibrary.org/obo/envo#
+foaf:		http://xmlns.com/foaf/0.1/
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+protege:		http://protege.stanford.edu/plugins/owl/protege#
+oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
+entity_quality:	http://purl.obolibrary.org/obo/oba/patterns/entity_quality/
+entity_attribute:	http://purl.obolibrary.org/obo/oba/patterns/entity_attribute/
+entity_attribute1:	http://purl.obolibrary.org/obo/envo-p/patterns/entity_attribute/
+process_attribute:	http://purl.obolibrary.org/obo/envo-p/patterns/process_attribute/
+
+[SourceDeclaration]
+sourceUri	datasource1
+connectionUrl	jdbc:h2:file:~/books.h2.db:books;DATABASE_TO_UPPER=FALSE
+username	sa
+password	
+driverClass	org.h2.Driver
+
+[MappingDeclaration] @collection [[
+]]
+

@@ -1,0 +1,133 @@
+[URI of the OWL(RDF/XML) output file]
+
+http://purl.obolibrary.org/obo/EDIS/external/import
+
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0302859 #genetically modified organism
+http://purl.obolibrary.org/obo/OBI_0000181 #population
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+subClassOf
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+#Landscape Plants-native and nonnative, groundcover and bedding plant
+http://purl.obolibrary.org/obo/NCBITaxon_4136 #Lamiaceae
+http://purl.obolibrary.org/obo/NCBITaxon_103544 #Phlox subulata
+http://purl.obolibrary.org/obo/NCBITaxon_326155 #Conradina grandiflora
+http://purl.obolibrary.org/obo/NCBITaxon_3499 #Urticaceae
+http://purl.obolibrary.org/obo/NCBITaxon_38596 #Ajuga reptans
+http://purl.obolibrary.org/obo/NCBITaxon_4622 #Calathea
+
+#Citrus and non-citrus
+http://purl.obolibrary.org/obo/NCBITaxon_2706 #Citrus
+http://purl.obolibrary.org/obo/NCBITaxon_4081 #Solanum lycopersicum
+http://purl.obolibrary.org/obo/NCBITaxon_4113 #Solanum tuberosum
+http://purl.obolibrary.org/obo/NCBITaxon_215581 #Solanum viarum
+
+#Reptiles--native, introduced, invasive
+http://purl.obolibrary.org/obo/NCBITaxon_8342 #Anura
+http://purl.obolibrary.org/obo/NCBITaxon_8570 #Serpentes
+http://purl.obolibrary.org/obo/NCBITaxon_32523 #Tetrapoda
+http://purl.obolibrary.org/obo/NCBITaxon_8496 #Alligator mississippiensis
+http://purl.obolibrary.org/obo/NCBITaxon_48399 #Crocodylus acutus
+http://purl.obolibrary.org/obo/NCBITaxon_8459 #Testudines
+http://purl.obolibrary.org/obo/NCBITaxon_8830 #Anatidae
+http://purl.obolibrary.org/obo/NCBITaxon_317373 #Osteopilus septentrionalis
+http://purl.obolibrary.org/obo/NCBITaxon_8386 #Rhinella marina
+http://purl.obolibrary.org/obo/NCBITaxon_51750 #Python molurus
+http://purl.obolibrary.org/obo/NCBITaxon_8515 #Iguanidae
+
+#Pest management classes
+http://purl.obolibrary.org/obo/NCBITaxon_6231 #Nematoda
+http://purl.obolibrary.org/obo/NCBITaxon_50557 #Insecta
+http://purl.obolibrary.org/obo/NCBITaxon_6946 #Acariformes - mite superorder
+http://purl.obolibrary.org/obo/NCBITaxon_6934 #Parasitiformes - mite superorder
+http://purl.obolibrary.org/obo/NCBITaxon_367330 #Mimosa strigillosa
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_2759 #Eukaryota 
+  subClassOf
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+#Citrus Pest Management: Disease
+
+[Source ontology]
+DOID #Human Disease Ontology
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease
+  subClassOf http://purl.obolibrary.org/obo/BFO_0000016 #disposition
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+
+#######
+#Chemicals of Biological Interest CHEBI
+#Pesticide
+########
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_25944 #pesticide
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_33232 #application
+  subClassOf http://purl.obolibrary.org/obo/BFO_0000023 #role
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0002434 #interacts with
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+
+[Source annotation URIs to be excluded]
+
+#deleted: production from IDO
+#deleted environmental zone, etc. from ENVO
