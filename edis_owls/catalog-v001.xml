@@ -5,11 +5,11 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogmsextra" uri="ogms_imp.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl" uri="iao.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/EDIS/" uri="edis.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/doid_imp" uri="doid_imp.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/duo_import" uri="duo_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/hp_import" uri="hp_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544068154906" name="http://purl.obolibrary.org/obo/ogmsextra" uri="ogms_imp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/EDIS/" uri="edis.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/doid_imp" uri="doid_imp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/duo_import" uri="duo_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/hp_import" uri="hp_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1544720041217" name="http://purl.obolibrary.org/obo/ogmsextra" uri="ogms_imp.owl"/>
     </group>
 </catalog>

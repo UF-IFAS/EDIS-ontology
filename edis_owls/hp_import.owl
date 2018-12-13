@@ -1548,7 +1548,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hp.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
     </owl:Class>
@@ -1861,13 +1860,13 @@ This interpretation is *not* the same as an at-all-times relation
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/hp.owl">
         <dc:creator>Sebastian Koehler</dc:creator>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please see license of HPO at http://www.human-phenotype-ontology.org</rdfs:comment>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Robinson, Sebastian Koehler, Sandra Doelken, Chris Mungall, Melissa Haendel, Nicole Vasilevsky, Monarch Initiative, et al.</oboInOwl:saved-by>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Please see license of HPO at http://www.human-phenotype-ontology.org</rdfs:comment>
         <dc:creator>The Human Phenotype Ontology Consortium</dc:creator>
         <dc:creator>The Monarch Initiative</dc:creator>
         <oboInOwl:logical-definition-view-relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</oboInOwl:logical-definition-view-relation>
-        <dc:contributor>Joie Davis</dc:contributor>
         <dc:creator>Peter N Robinson</dc:creator>
+        <dc:contributor>Joie Davis</dc:contributor>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_phenotype</oboInOwl:default-namespace>
         <dc:contributor>Nicole Vasilevsky</dc:contributor>
         <dc:subject>Phenotypic abnormalities encountered in human disease</dc:subject>
