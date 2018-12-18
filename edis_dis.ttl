@@ -1,0 +1,517 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix edis: <http://purl.obolibrary.org/obo/EDIS/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<#map-diseases-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DISEASES';""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-diseases-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DISEASES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_4
+    ].
+
+<#map-allergies-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC ALLERGIES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-allergies-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC ALLERGIES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_1205
+    ].
+
+<#map-diabetes-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DIABETES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-diabetes-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DIABETES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_9351
+    ].
+
+<#map-hypertension-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC HIGH BLOOD PRESSURE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-hypertension-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC HIGH BLOOD PRESSURE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_10763
+    ].
+
+<#map-osteoporosis-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC OSTEOPOROSIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-osteoporosis-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC OSTEOPOROSIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_11476
+    ].
+
+<#map-foodallergies-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC FOOD ALLERGIES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-foodallergies-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC FOOD ALLERGIES'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class edis:EDIS_00000200
+    ].
+
+<#map-listeriosis-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LISTERIOSIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-listeriosis-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LISTERIOSIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_11573
+    ].
+
+<#map-salmonellosis-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC SALMONELLA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-salmonellosis-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC SALMONELLA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_0060859
+    ].
+
+<#map-avianinfluenza-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC AVIAN INFLUENZA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-avianinfluenza-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC AVIAN INFLUENZA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_4492
+    ].
+
+<#map-lymedisease-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LYME DISEASE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-lymedisease-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LYME DISEASE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_11729
+    ].
+
+<#map-leishmaniasis-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LEISHMANIASIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-leishmaniasis-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC LEISHMANIASIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_9065
+    ].
+
+<#map-chikv-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC CHIKV'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-chikv-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC CHIKV'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_0050012
+    ].
+
+<#map-dengue-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DENGUE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-dengue-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC DENGUE'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_12205
+    ].
+
+<#map-easternequine-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC EASTERN EQUINE ENCEPHALITIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-easternequine-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC EASTERN EQUINE ENCEPHALITIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_10841
+    ].
+
+<#map-malaria-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC MALARIA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-malaria-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC MALARIA'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_12365
+    ].
+
+<#map-stlouis-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC ST LOUIS ENCEPHALITIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-stlouis-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC ST LOUIS ENCEPHALITIS'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_10845
+    ].
+
+<#map-yellowfever-soid-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC YELLOW FEVER'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/{soid}";
+        rr:class bfo:topic_0003;
+    ];
+   rr:predicateObjectMap [
+        rr:predicate rdfs:label;
+        rr:objectMap [ 
+        rr:column "topic"; ];
+    ];
+        rr:predicateObjectMap [
+        rr:predicate bfo:IAO_0000136;
+        rr:objectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}"; ]
+    ].
+
+<#map-yellowfever-oid>
+    rr:logicalTable [ rr:sqlQuery """
+        select id, a.oid as oid, a.text as topic, b.soid as soid from dbo.GLOSS as a, 
+            dbo.BASE as b where a.oid = b.oid and b.soid = 'TOPIC YELLOW FEVER'""";
+        rr:sqlVersion rr:SQL2008];
+    rr:subjectMap [ 
+        rr:template "https://www.edis.ifas.ufl.edu/EDIS_{oid}";
+        rr:class bfo:DOID_9682
+    ].
+
